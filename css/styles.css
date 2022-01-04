@@ -38,9 +38,24 @@ body {
     min-height: 75px;
 }
 
+.header__logo-img:hover {
+    height: 45px;
+    width: 45px;
+}
+
 .header__link {
     text-decoration: none;
     margin: 0 0 0 33px;
+}
+
+.header__link:hover .white-icon {
+    fill: #F16D7F;
+}
+
+.header__link:active .white-icon {
+    fill: white;
+    height: 35px;
+    width: 35px;
 }
 
 .header__wrp {
@@ -60,8 +75,21 @@ body {
 }
 
 .header__menu-btn {
-    border: 1px solid #222222;
+    border: none;
     background-color: transparent;
+}
+
+.white-icon {
+    fill: white;
+}
+
+.header__menu-btn:hover .white-icon,
+.header__menu-btn:focus .white-icon {
+    fill: #F16D7F;
+}
+
+.header__menu-btn:active {
+    outline: 1px solid white;
 }
 
 .brand {
@@ -118,6 +146,18 @@ body {
     justify-content: center;
     border: 1px solid;
     flex-direction: column;
+    position: relative;
+}
+
+.sales__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(33, 22, 22, .7);
+    z-index: 2;
 }
 
 .sales__item--woman {
@@ -125,6 +165,7 @@ body {
 }
 
 .sales__item-text {
+    z-index: 3;
     font-size: 18px;
     line-height: 26px;
     text-align: center;
@@ -133,6 +174,7 @@ body {
 }
 
 .sales__item-title {
+    z-index: 3;
     font-size: 24px;
     line-height: 22px;
     text-align: center;
@@ -187,6 +229,28 @@ body {
     flex-direction: column;
     background: #F8F8F8;
     margin: 30px 0px 48px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.products__item:hover .product__item-btn {
+    display: block;
+}
+
+.products__item:active .product__item-btn {
+    background: url(../img/add_to_cardhov.png);
+    display: block;
+}
+
+.product__item-btn {
+    display: none;
+    border: none;
+    position: absolute;
+    top: 0px;
+    width: 360px;
+    height: 420px;
+    background: url(../img/add_to_card.png);
+    z-index: 999;
 }
 
 .products__item-title {
@@ -217,12 +281,18 @@ body {
     padding: 10px 0px 20px 18px;
 }
 
-.produstc__browse {
+.product__browse {
+    background: none;
     color: #FF6A6A;
     border: 2px solid #FF6A6A;
     text-decoration: none;
     margin-top: 48px;
     padding: 14px 38px;
+}
+
+.product__browse:hover {
+    color: white;
+    background: #FF6A6A;
 }
 
 .benefits {
@@ -375,6 +445,10 @@ body {
     border-bottom-right-radius: 20px;
 }
 
+.footer__btn:hover {
+    color: var(--black);
+}
+
 .footer__input {
     background: #E1E1E1;
     height: 49px;
@@ -406,5 +480,25 @@ body {
 }
 
 .footer__socials-list {
+    display: flex;
+    flex-direction: row;
     padding: 24px 235px 0px 0px;
+}
+
+.footer__socials-item {
+    background: url(../img/icon_back.png);
+    height: 20px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.footer__socials-item:hover {
+    background: url(../img/icon_hover.png);
+    height: 20px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.icon_link:hover {
+    fill: white;
 }
