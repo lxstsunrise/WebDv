@@ -104,6 +104,10 @@
     outline: 0;
 }
 
+.footer__input:focus {
+    border: 2px solid black;
+}
+
 .footer__socials {
     display: flex;
     justify-content: space-between;
@@ -130,19 +134,41 @@
 }
 
 .footer__socials-item {
-    background: url(../img/icon_back.png);
-    height: 20px;
     padding: 5px;
-    margin-right: 5px;
 }
 
-.footer__socials-item:hover {
-    background: url(../img/icon_hover.png);
-    height: 20px;
-    padding: 5px;
-    margin-right: 5px;
-}
-
-.icon_link:hover {
+.subscribe-icon {
     fill: white;
+}
+
+.subscribe-icon__path {
+    fill: black;
+}
+
+.icon__link:hover .subscribe-icon {
+    fill: #F16D7F;
+}
+
+.icon__link:hover .subscribe-icon__path {
+    fill: white;
+}
+
+.icon__link:focus .subscribe-icon {
+    fill: #F16D7F;
+}
+
+.icon__link:focus .subscribe-icon__path {
+    fill: white;
+}
+
+.icon__link:active .subscribe-icon {
+    fill: #F16D7F;
+}
+
+.icon__link:active .subscribe-icon__path {
+    fill: white;
+}
+
+.icon__link {
+    text-decoration: none;
 }
