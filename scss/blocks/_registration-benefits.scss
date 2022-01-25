@@ -1,0 +1,35 @@
+.reg_benefits {
+    margin-top: 70px;
+    margin-left: 130px;
+}
+
+.reg__benefits-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.reg__benefits-subtitle {
+    padding-top: 25px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.reg__benefits-descr {
+    width: 600px;
+    max-width: 100%;
+    text-align: left;
+    padding-top: 15px;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.reg__benefits-descr::before {
+    content: url(../img/tick.svg);
+    padding-right: 30px;
+}

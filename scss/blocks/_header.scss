@@ -1,0 +1,115 @@
+.header {
+    background-color: var(--black);
+    min-height: 75px;
+}
+
+.header__nav {
+    display: none;
+    background: white;
+    margin-top: 15px;
+    padding-left: 34px;
+    width: 232px;
+    max-width: 100%;
+    height: 764px;
+    max-height: 100%;
+    position: absolute;
+    right: 0px;
+    box-shadow: -6px 7px 12px 4px rgba(34, 60, 80, 0.2);
+}
+
+.header__logo-img:hover {
+    opacity: 0.7;
+}
+
+.header__logo-img:active {
+    transform: scale(1.1);
+}
+
+.header__link {
+    text-decoration: none;
+    margin: 0 0 0 33px;
+}
+
+.header__link:hover .white-icon {
+    fill: #F16D7F;
+}
+
+.header__link:active .white-icon {
+    fill: white;
+    transform: scale(1.1);
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.header__logo-form-wrp {
+    display: flex;
+}
+
+.header__search {
+    padding-top: 10px;
+    margin: 0 0 0 41px;
+}
+
+.header__menu-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header__menu-btn:hover .white-icon,
+.header__menu-btn:focus .white-icon {
+    fill: #F16D7F;
+}
+
+.header__menu-btn:active {
+    outline: 1px solid white;
+}
+
+.header__search-frm {
+    position: relative;
+}
+
+.header__search-input {
+    height: 35px;
+    width: 0;
+    padding: 0 12px 0 35px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .3s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.header__search-input:focus {
+    width: 300px;
+    z-index: 1;
+    border-bottom: 2px solid #F9F0DA;
+    color: #F16D7F;
+}
+
+.header__search-btn {
+    background: no-repeat url(../img/loup.svg);
+    border: none;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 0;
+}
+
+.header__search-btn:focus-within {
+    display: none;
+}
+
+.header__search-btn:before {
+    content: "";
+    font-size: 24px;
+    color: white;
+}
