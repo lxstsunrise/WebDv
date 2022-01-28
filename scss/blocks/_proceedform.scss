@@ -1,0 +1,79 @@
+fieldset {
+    border: none;
+}
+
+.shopping__form-title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.shopping__input {
+    width: 369px;
+    border: 1px solid #A4A4A4;
+    height: 45px;
+    margin-bottom: 20px;
+    padding-left: 17px;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #222222;
+}
+
+.proceed__form {
+    background: #F5F3F3;
+    padding-top: 39px;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-bottom: 42px;
+    margin-top: 37px;
+}
+
+.sub-price {
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    text-align: right;
+    margin-bottom: 12px;
+}
+
+.grand-price {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    text-align: right;
+    margin-bottom: 21px;
+}
+
+.proceed__form-hr {
+    background: #E2E2E2;
+    margin-bottom: 17px;
+}
+
+.proceed__form-btn {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 15px 42px;
+    border: none;
+    background: #F16D7F;
+    cursor: pointer;
+}
+
+.proceed__form-btn:hover {
+    transform: scale(1.1);
+}
+
+.proceed__form-btn:active {
+    opacity: 0.7;
+}
+
+#quote {
+    width: 125px;
+    padding-right: 17px;
+}
