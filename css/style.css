@@ -47,6 +47,7 @@ body {
     position: absolute;
     right: 0px;
     box-shadow: -6px 7px 12px 4px rgba(34, 60, 80, 0.2);
+    z-index: 999;
 }
 
 .header__logo-img:hover {
@@ -157,6 +158,19 @@ body {
     color: #F16D7F;
 }
 
+.nav-title-item__link:hover {
+    color: var(--black);
+}
+
+.nav-title-item__link:active {
+    opacity: 0.7;
+}
+
+.nav-title-item__link:focus {
+    color: #F16D7F;
+    opacity: 0.5;
+}
+
 .nav_btn {
     margin: 16px 0px 8px 203px;
     width: 12px;
@@ -200,6 +214,19 @@ body {
     line-height: 17px;
     color: #6F6E6E;
     padding-top: 20px;
+}
+
+.sub-item__link:hover {
+    color: var(--pink-color);
+}
+
+.sub-item__link:active {
+    opacity: 0.7;
+}
+
+.sub-item__link:focus {
+    opacity: 0.5;
+    color: var(--black);
 }
 
 .brand {
@@ -347,6 +374,11 @@ body {
     display: block;
 }
 
+.products__item:focus .product__item-btn {
+    opacity: 0.5;
+    display: block;
+}
+
 .product__item-btn {
     display: none;
     border: none;
@@ -400,6 +432,14 @@ body {
 .product__browse:hover {
     color: white;
     background: #FF6A6A;
+}
+
+.product__browse:active {
+    transform: scale(1.1);
+}
+
+.product__browse:focus {
+    opacity: 0.7;
 }
 
 .benefits {
